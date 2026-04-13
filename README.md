@@ -56,8 +56,3 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Troubleshooting
-
-- **`fatal: could not read Username for 'https://github.com'` during build**
-  - The repo is private and `git clone` in Docker cannot prompt for credentials.
-  - Make the repo public, or switch Docker build to SSH/token-based authentication.
