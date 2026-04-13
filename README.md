@@ -15,7 +15,7 @@ This image runs the terminal game with `python main.py` (no GUI dependencies).
 Basic build:
 
 ```bash
-docker build -t YOURDOCKERHUB_USERNAME/maze:v1 .
+docker build -t mrgdz42/maze:v1 .
 ```
 
 Build from a specific repo URL or branch:
@@ -24,13 +24,13 @@ Build from a specific repo URL or branch:
 docker build \
   --build-arg MAZE_REPO_URL=https://github.com/mrod440/maze-docker.git \
   --build-arg MAZE_REPO_REF=main \
-  -t YOURDOCKERHUB_USERNAME/maze:v1 .
+  -t mrgdz42/maze:v1 .
 ```
 
 ## Run the maze (interactive CLI)
 
 ```bash
-docker run --rm -it YOURDOCKERHUB_USERNAME/maze:v1
+docker run --rm -it mrgdz42/maze:v1
 ```
 
 `-it` is required so you can enter commands in the game prompt.
@@ -46,7 +46,7 @@ docker run --rm -it mrgdz42/maze:v1
 
 ```bash
 docker login
-docker push YOURDOCKERHUB_USERNAME/maze:v1
+docker push mrgdz42/maze:v1
 ```
 
 ## Run without Docker
