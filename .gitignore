@@ -212,3 +212,7 @@ docs/.DS_Store
 .specstory/
 docs/.specstory/
 .DS_Store
+
+# Game / local SQLite (save slot + test DBs)
+waxworks.db
+*.db
