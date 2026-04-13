@@ -1,5 +1,6 @@
-# CLI-only Waxworks maze. Image expects a public git repo (assignment: clone in Docker).
-# Push this repository to GitHub before building, or the clone step will fail.
+# CLI-only Waxworks maze.
+# Docker build clones from GitHub, so the repo must be public
+# (or you must configure authenticated cloning for private access).
 
 FROM python:3.12-slim-bookworm
 
