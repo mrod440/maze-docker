@@ -1,8 +1,7 @@
 # CLI-only Waxworks maze.
 # Docker build clones from GitHub, so the repo must be public
-# (or you must configure authenticated cloning for private access).
 
-FROM python:3.12-slim-bookworm
+FROM python:3.11.9-slim-bookworm
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends git \
